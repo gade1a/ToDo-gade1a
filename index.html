@@ -13,15 +13,12 @@
         <button type="submit">Add</button>
     </form>
     <ul>
-        {% for task in tasks %}
             <li>
-                {{ task }}
                 <form method="post" action="/delete" style="display:inline;">
                     <input type="hidden" name="task" value="{{ task }}">
                     <button type="submit">Delete</button>
                 </form>
             </li>
-        {% endfor %}
     </ul>
 </body>
 </html>
